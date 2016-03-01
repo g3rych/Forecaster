@@ -14,4 +14,5 @@
     <string name="wind_view">Wind: <xliff:g id="wind">%.0f</xliff:g> m/s</string>
     <string name="account_type">com.example.android.testfragments.app</string>
 
+    <string name="empty_list">No weather data available</string>
 </resources>

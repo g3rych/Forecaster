@@ -52,6 +52,8 @@ public class MainActivityFragment extends Fragment implements LoaderManager.Load
             }
         });
         adapter = new MyCursorAdapter(getContext(),null,0);
+        View emptyView = rootView.findViewById(R.id.empty_weather_list);
+        listView.setEmptyView(emptyView);
         listView.setAdapter(adapter);
 
         getLoaderManager().initLoader(0, null, this);

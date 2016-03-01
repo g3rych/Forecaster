@@ -10,4 +10,11 @@ android:orientation="vertical">
     android:layout_height="match_parent"
     android:choiceMode="singleChoice" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/empty_weather_list"
+        android:gravity="center_horizontal"
+        android:text="@string/empty_list" />
+
 </FrameLayout>
