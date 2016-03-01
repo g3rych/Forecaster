@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Общие настройки">
+    <EditTextPreference
+    android:title="Город"
+    android:inputType="text"
+    android:key="location"
+    android:singleLine="true"
+    android:defaultValue="Yakutsk"
+    android:id="@+id/location_text_edit_id"/>
+
+        <ListPreference
+            android:key="weather_provider"
+            android:entries="@array/weather_providers_entries"
+            android:entryValues="@array/weather_providers_values"
+            android:defaultValue="openweathermap"
+            android:title="Поставщик погоды"/>
+
+
+
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="lang_WU">lang:EN</string>
+    <string name="lang_OWM">en</string>
+
+    <string name="app_name">TestFragments</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="format_temperature">%.0f\u00B0</string>
+    
+    
+    <string name="humidity_view">Humidity: <xliff:g id="humidity">%d</xliff:g>%%</string>
+    <string name="pressure_view">Pressure: <xliff:g id="pressure">%.0f</xliff:g>hPA</string>
+    <string name="wind_view">Wind: <xliff:g id="wind">%.0f</xliff:g> m/s</string>
+    <string name="account_type">com.example.android.testfragments.app</string>
+
+</resources>

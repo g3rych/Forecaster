@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="weather_providers_entries">
+        <item>OpenWeatherMap</item>
+        <item>WeatherUnderground</item>
+    </string-array>
+    <string-array name="weather_providers_values">
+        <item>openweathermap</item>
+        <item>weatherunderground</item>
+    </string-array>
+</resources>
