@@ -21,6 +21,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.example.android.testfragments.data.WeatherProvider;
 
@@ -82,6 +83,7 @@ public class MainActivityFragment extends Fragment implements LoaderManager.Load
             Log.d("Sunshine",mPosition+"");
             listView.smoothScrollToPosition(mPosition);
         }
+        updateEmptyList();
 
     }
 
@@ -104,6 +106,16 @@ public class MainActivityFragment extends Fragment implements LoaderManager.Load
     public void onSaveInstanceState(Bundle outState) {
         outState.putInt("pos", mPosition);
         super.onSaveInstanceState(outState);
+
+    }
+
+    public void updateEmptyList() {
+        TextView tv = (TextView) getActivity().findViewById(R.id.empty_weather_list);
+        if (adapter.getCount() == 0) {
+            if (Wizard.isConnected(getActivity())) {
+                tv.setText(R.string.empty_list_network_unavailable);
+            }
+        }
 
     }
 

@@ -1,5 +1,9 @@
 package com.example.android.testfragments;
 
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+
 import com.example.android.testfragments.R;
 
 public class Wizard {
@@ -41,5 +45,11 @@ public class Wizard {
                 break;
         }
         return retResource;
+    }
+
+    public static boolean isConnected(Context c) {
+        ConnectivityManager cm = (ConnectivityManager) c.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+        return activeNetwork.isConnectedOrConnecting();
     }
 }
