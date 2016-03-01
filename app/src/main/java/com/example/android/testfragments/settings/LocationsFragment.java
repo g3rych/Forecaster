@@ -48,7 +48,7 @@ public class LocationsFragment extends DialogFragment {
                 R.id.list_item_settings);
 
         AlertDialog.Builder dialogBuilder= new AlertDialog.Builder(getActivity());
-        dialogBuilder.setTitle("Выберети местоположение");
+        dialogBuilder.setTitle(getString(R.string.dialog_loc));
         dialogBuilder.setAdapter(adapter, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {

@@ -6,4 +6,7 @@
     <string name="action_settings">Настройки</string>
     <string name="wind_view">Ветер: <xliff:g id="wind">%.0f</xliff:g> м/с</string>
     <string name="humidity_view">Влажность: <xliff:g id="humidity">%d</xliff:g>%%</string>
+
+
+    <string name="dialog_loc">Выберите свой город</string>
 </resources>

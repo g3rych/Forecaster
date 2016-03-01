@@ -16,4 +16,6 @@
 
     <string name="empty_list">No weather data available</string>
     <string name="empty_list_network_unavailable">No weather data available. No internet connection</string>
+
+    <string name="dialog_loc">Select your location</string>
 </resources>
